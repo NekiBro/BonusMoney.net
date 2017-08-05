@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper, .footer, .container, .header{width:1158px;}
+.wrapper{margin:0 auto; padding:20px 0 10px 0;}
+/* слайдер */
+.sliderbox{float:left; padding:25px 0 0 10px;}
+.sliderbg{height:223px; width:487px; background:url(../images/sliderbg.gif) repeat-x;}
+.sliderleft, .sliderright{height:223px; background:url(../images/slidersides.html) no-repeat;} .sliderright{background-position:100% -223px;}
+.slider{ padding-left:2px; padding-right:2px;}
+.panel-overlay .link{float:right; margin-left:10px; padding:10px; position:relative; top:20px;}
+.panel-overlay .link a img{background:url(../images/sliderlink.html) no-repeat; width:42px; height:22px;opacity:0.5;}
+.panel-overlay .link a:hover img{background-position:0 -22px;opacity:1;}
+.slidertext{padding:12px 12px 12px 0px; color:#ffffff; text-transform: uppercase; font-weight:bold;}
+.panel img{width:485px; position:relative; top:-20px;}
+.filmstrip .thumbs{width:70px;height:45px;display:block;overflow:hidden;}
+.filmstrip img{width:70px;}
+.sliderover{background: url(../images/sliderover.html) no-repeat; height:223px; width:483px; position:relative;}
+/* блок новостей */
+.nnews{float:left; margin-left:25px; width:240px; padding-top:26px;height:250px;}
+.nnews .dtitle{background:url(../images/topblocktitles.html) no-repeat; height:17px; width:90px;}
+.nnews li{ border-bottom:1px dotted #b9b9b9; height:19px; overflow:hidden; color:#fdca43; line-height:19px;}
+.nnews li a{line-height:19px; color:#525252; padding-left:5px;} .nnews li a:hover{color:#fdca43;}
+.reviews{float:left; margin-left:25px; width:240px; padding-left:25px; padding-top:26px; background:url(../images/topblsep.gif) no-repeat 0 26px; height:250px;}
+.reviews .dtitle{background:url(../images/topblocktitles.html) no-repeat 0 -17px; height:17px; width:137px;}
+.reviews li{ border-bottom:1px dotted #b9b9b9; height:19px; overflow:hidden; color:#fdca43; line-height:19px;}
+.reviews li a{line-height:19px; color:#525252; padding-left:5px;} .reviews li a:hover{color:#fdca43;}
+.dle{float:left; margin-left:25px; width:240px; padding-left:25px; padding-top:26px; background:url(../images/topblsep.gif) no-repeat 0 26px; height:250px;}
+.dle .dtitle{background:url(../images/topblocktitles.html) no-repeat 0 -17px; height:17px; width:137px;}
+.dle li{ border-bottom:1px dotted #b9b9b9; height:19px; overflow:hidden; color:#fdca43; line-height:19px;}
+.dle li a{line-height:19px; color:#525252; padding-left:5px;} .dle li a:hover{color:#fdca43;}
+.haks{float:left; margin-left:25px; width:240px; padding-left:25px; padding-top:26px; background:url(../images/topblsep.gif) no-repeat 0 26px; height:250px;}
+.haks .dtitle{background:url(../images/topblocktitles.html) no-repeat; height:17px; width:93px;}
+.haks li{ border-bottom:1px dotted #b9b9b9; height:19px; overflow:hidden; color:#fdca43; line-height:19px;}
+.haks li a{line-height:19px; color:#525252; padding-left:5px;} .haks li a:hover{color:#fdca43;}
+@-webkit-keyframes blink6 {
+ 10% { transform: scale(1, 1) rotate(80deg); }
+ 20% { transform: scale(0, 0) rotate(160deg); }
+ 100% { transform: scale(0, 0) rotate(0deg); }
+}
+@keyframes blink6 {
+ 10% { transform: scale(1, 1) rotate(80deg); }
+ 20% { transform: scale(0, 0) rotate(160deg); }
+ 100% { transform: scale(0, 0) rotate(0deg); }
+}
+#blink6 {
+  position: relative;
+  display: inline-block;
+  color: #27408b;
+  text-shadow: 0 0 10px #3d7a97;
+  background: ;
+}
+#blink6:after, #blink6:before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: 
+    radial-gradient(rgba(255,255,255,1), rgba(255,255,255,0) 30%),
+    linear-gradient(45deg, rgba(0,0,0,0) 49%, rgba(255,255,255,.4) 50%, rgba(0,0,0,0) 51%),
+    linear-gradient(135deg, rgba(0,0,0,0) 49%, rgba(255,255,255,.4) 50%, rgba(0,0,0,0) 51%);
+  -webkit-animation: blink6 10s linear infinite;
+  animation: blink6 10s linear infinite;
+  transform: scale(0, 0) rotate(0deg);
+}
+#blink6:before {
+  top: -30%;
+  right: 0; left: auto;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* левая и правая колонки */
+.leftcol{float:left; width:228px; padding:1px 0 10px 0px;}
+.rightcol{float:right; width:228px; padding:1px 0px 10px 0;}
+.wblock{width:228px; margin-bottom:10px;}
+.wblock .dbg{background:url(../images/wblockbg.html) repeat-y;}
+.wblock .dtop{background:url(../images/wblocktop.html) no-repeat;}
+.wblock .dbtm{ background:url(../images/wblockbtm.html) no-repeat 0 100%;}
+.wblock .dtitle{height:34px;} .wblock .dtitle img{background:url(../images/1blocktitles.html) top left no-repeat; height:16px; width:123px; float:left; margin:7px 0 0 10px;}
+.rbanner .dtitle img{background-position: 0px -32px;} .bvote .dtitle img{background-position:0 -64px;} .bcalendar .dtitle img{background-position:0 -80px;}
+.wblock .dcont{padding: 10px; 10px;}
+.navi .dcont{padding:15px 1px;}
+.navi li{background:url(../images/navili.gif) no-repeat bottom; height:26px; line-height:14px; margin:0; padding:0;}
+.navi li a{background:url(../images/naviarrow.gif) no-repeat 0 50%; margin-left:10px; padding-left:10px;color:#525252; font-weight:bold;}
+.navi li a:hover{margin-left:13px;color:#483d8b;}
+.bwblock{width:228px; margin-bottom:0px;}
+.bwblock .dbg{background:url(../images/blockbluebg.gif) repeat-y;}
+.bwblock .dtop{background:url(../images/blueblocktop.gif) no-repeat;}
+.bwblock .dbtm{background:url(../images/blockbluebtm.gif) no-repeat 0 100%;}
+.bwblock .dtitle{height:34px;} .bwblock .dtitle img{background:url(../images/blocktitles.html) no-repeat; height:16px; width:123px; float:left; margin:7px 0 0 10px;}
+.1bwblock .dtitle{height:34px;} .1bwblock .dtitle img{background:url(../images/1blocktitles.html) no-repeat; height:16px; width:123px; float:left; margin:7px 0 0 10px;}
+.topnews .dtitle img{background-position:0 -16px;}
+.bwblock .dcont{padding:18px 6px 12px 6px;}
+.rchoose .dtitle img{background-position:0 -16px;}
+.rchoose .dcont{padding:15px 1px;}
+.rchoose .item{background:url(../images/navili.gif) no-repeat bottom; padding:2px 10px 15px 10px;}
+.macos .dtitle img{background-position:0 -112px; width:130px;} 
+/* центральная колонка */
+.maincol{margin:0 230px 0 230px; padding-top:23px;}
+.maincont{width:100%; float:left; overflow:hidden; padding-bottom:35px;}
+.contbanner{height:107px; background:url(../images/contbannerbg.gif) repeat-x;}
+.contbanner .dleft, Сохранить изменения .contbanner .dright{background:url(../images/contbannersides.gif) no-repeat; height:107px;}
+.contbanner .dright{background-position:100% -107px;}
+.contbanner .dcont{margin:0 auto; padding-top:28px; width:468px; margin:0 auto;}
+/* спидбар */
+.speedbox .dbg{height:36px; padding-bottom:10px; background:url(../images/speedboxbg.gif) repeat-x;}
+.speedbox .dleft, .speedbox .dright{height:36px; background:url(../images/speedboxsides.gif) no-repeat;}
+.speedbox .dright{background-position:100% -36px;}
+.speedbar, .speedbar a{line-height:34px; color:#ffffff;} .speedbar a:hover{color:#ffffff; text-decoration: underline;}
+.speedbar{padding-left:40px; padding-right:15px; height:36px; overflow:hidden;}
+/* обводка баннеров */
+.bannpanel {
+display: inline-block;
+margin: 8px 0 2px 0;
+padding: 6px;
+text-align: center;
+border-radius: 3px;
+vertical-align: middle;
+background: none repeat scroll 0 0 #ffffff;
+box-shadow: 0 0 0 1px #dddddd, 0 0 10px #a9a9a9;
+}
+.bannceppanel {
+display: inline-block;
+margin: 8px 0 2px 0;
+padding: 3px;
+text-align: center;
+border-radius: 3px;
+vertical-align: middle;
+background: none repeat scroll 0 0 #ffffff;
+box-shadow: 0 0 0 1px #dddddd, 0 0 10px #a9a9a9;
+}
+.sharepanel {
+display: inline-block;
+margin: 8px 0 2px 0;
+padding: 7px 7px 0 7px;
+text-align: center;
+border-radius: 3px;
+vertical-align: middle;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.03);
+box-shadow: 0 0 0 1px #dddddd, 0 0 10px #a9a9a9;
+}
+
+/*footer*/
+.footer{height:252px;}	
+.topfoot{height:174px; width:100%;}
+	.topfoot .dbg, .topfoot .drtop, .topfoot .dright, .topfoot .drbtm, .topfoot .dleft{width:100%; height:100%;}
+	.topfoot .dbg{background:url(../images/topfootbg.png) repeat-x;}
+	.topfoot .drtop{background:url(../images/topfootrtop.png) no-repeat 100% 0;}
+	.topfoot .dright{background:url(../images/topfootr.png) no-repeat 100% 77px;}
+	.topfoot .drbtm{background:url(../images/topfootrbtm.png) no-repeat 100% 100%;}
+	.topfoot .dleft{background:url(../images/topfootl.png) no-repeat;}	
+.leftfoot{width:250px; height:100%; float:left; margin-right:-250px;}
+.pagetop{height:77px;}
+	.ptolink img{float:left; display:inline; background:url(../images/pagetop.png) no-repeat; width:132px; height:27px; margin:27px 0 0 53px;}
+		.ptolink:hover img{background-position:0 -27px;}		
+.minilogo{background:url(../images/minilogo.png) no-repeat; width:191px; height:82px; float:left; display:inline; margin:18px 0 0 30px;}
+.rightfoot{margin-left:280px;}
+.fmmenu{height:34px; padding-top:43px;}
+.fmlink{margin:0 5px; display:inline; background:url(../images/fmlink.png) no-repeat;  padding:5px 0 5px 0; color:#424343; font-size:1em; text-decoration:none; line-height:14px; font-style:italic;}
+	.fmlink span{background:url(../images/fmlink.png) no-repeat 100% -24px; display:inline; padding:5px 10px 5px 20px;}
+	.fmlink:hover{background-position:0 -48px;  color:#424343;}
+		.fmlink:hover span{background-position:100% -72px;}
+.hits{float:right; margin-top:35px;}		
+	.hits span{float:left; padding-right:15px;}	
+.pagebtm{height:78px;}
+	.pagebtm .dbg, .pagebtm .dleft, .pagebtm  .dright, .pagebtm .dltop, .pagebtm .drtop{width:100%; height:100%;}
+	.pagebtm .dbg{background:url(../images/btmbg.html) repeat-x;}
+	.pagebtm .dleft, .pagebtm  .dright{background:url(../images/btmside.html) repeat-y;}
+	.pagebtm  .dright{background-position:right;}
+	.pagebtm .dltop{background:url(../images/btmltop.html) no-repeat;}
+	.pagebtm .drtop{background:url(../images/btmrtop.html) no-repeat 100% 0;}
+.btmtext{font-size:1em; font-style:italic; text-align:center; color:#979797; line-height:18px; padding:15px 100px 0 100px;}
+	.btmtext span{color:#376b7e; display:block;}
+/*---speedbar---*/
+#speedbar {height:40px; background:url(../images/speed_bg.png) no-repeat; clear:both; position:relative;}
+/* эффект логотипа */
+		.image-effect-simple{
+			width: 650px;
+			height: 100px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+		}
+
+		.image-effect-simple .image-layer{
+			position: absolute;
+			top:0;
+			margin-left: 6px;
+			height: 241px;
+			overflow: hidden;
+			z-index: 1;
+
+			-webkit-transition: 0.4s ease;
+			transition: 0.4s ease;
+		}
+
+		.image-effect-simple:hover .image-layer{
+			transform: translateY(-50px);
+			-webkit-transform: translateY(-50px);
+			-webkit-filter: blur(1px);
+		}
+
+		.image-effect-simple .share-layer{
+			position: absolute;
+			bottom:-100px;
+			margin-left: 6px;
+			background-color: #fff;
+			width: 650px;
+			height: 100px;
+			-webkit-transition: 0.4s;
+			transition: 0.4s;
+			z-index: 10;
+		}
+
+		.image-effect-simple:hover .share-layer{
+			transform: translateY(-100px);
+			-webkit-transform: translateY(-100px);
+		}
+
+		.share-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 12px;
+			width: 80px;
+			border-radius: 2px;
+			margin:	30px 10px;
+		}
+
+		.share-via-facebook{
+			background-color:#3b5998;
+		}
+
+		.share-via-twitter{
+			background-color:#00aced;
+		}
+
+		.share-via-google{
+			background-color:#d34836;
+		}
+
+
+#input  { 
+  background-color : #000; 
+  border : #0f0 solid 1px; 
+  border-radius : 10px; 
+  margin : 5px 20px 0 0;} 
+
+a:hover img  { 
+  opacity : 1; 
+  transition : background-color 1s ease-in-out, border-color 1s ease-in-out; 
+  box-shadow : 0 0 35px #f2f2f2;} 
+
+.cattext{background:#e4e8ea; padding:10px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; margin:0 10px 10px 10px;
+position:relative; top:10px;}
+
+
+
+			h1, p{
+				text-align:center;
+			}
+			img.animate1:hover {
+				filter: alpha(Opacity=25); /* Полупрозрачность для IE */
+				opacity: 0.25; /* Полупрозрачность для других браузеров */	
+			}
+			
+			img.animate2 {
+				filter: alpha(Opacity=25); /* Полупрозрачность для IE */
+				opacity: 0.25; /* Полупрозрачность для других браузеров */	
+			}
+			img.animate2:hover {
+				filter: alpha(Opacity=100); /* Полупрозрачность для IE */
+				opacity: 1; /* Полупрозрачность для других браузеров */	
+			}
+			
+			img.animate3 {
+				filter: alpha(Opacity=25); /* Полупрозрачность для IE */
+				opacity: 0.25; /* Полупрозрачность для других браузеров */
+				-moz-transition: all 1s ease-in-out; /* эффект перехода для Firefox до версии 16.0 */
+				-webkit-transition: all 1s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
+				-o-transition: all 1s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
+				transition: all 1s ease-in-out; /* эффект перехода для других браузеров */
+			}
+			img.animate3:hover {
+				filter: alpha(Opacity=100); /* Полупрозрачность для IE */
+				opacity: 1; /* Полупрозрачность для других браузеров */	
+			}
+												
+			img.animate4{
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			img.animate4:hover{
+				-moz-transform: scale(1.5); /* эффект трансформации для Firefox до версии 16.0 */
+				-webkit-transform: scale(1.5); /* эффект трансформации для Chrome до версии 26.0, Safari, Android и iOS */
+				-o-transform: scale(1.5); /* эффект трансформации для Opera до версии 12.10 */
+				-ms-transform: scale(1.5); /* эффект трансформации для IE 9.0 */
+				transform: scale(1.5); /* эффект трансформации для других браузеров */
+			}
+			
+			img.animate5{
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			img.animate5:hover{
+				-moz-transform: rotate(360deg) scale(1.5);
+				-webkit-transform: rotate(360deg) scale(1.5);  
+				-o-transform: rotate(360deg) scale(1.5); 
+				-ms-transform: rotate(360deg) scale(1.5);
+				transform: rotate(360deg) scale(1.5);
+			}			
+			
+			div.rotate1 {
+				background: url(img/2.html); /* Путь к файлу с исходным рисунком  */
+				display: block; /* Рисунок как блочный элемент */
+				width: 480px; /* Ширина рисунка */
+				height: 360px; /*  Высота рисунка */
+				margin: 0 auto; /* выравниваем слой по центру страницы */
+			}
+			div.rotate1:hover {
+				background: url(img/1.html); /* Путь к файлу с заменяемым рисунком  */
+			}
+   
+			a.rotate2 {
+				background: url(img/button.html); /* Путь к файлу с исходным  рисунком */
+				display: block; /* Ссылка как блочный элемент */
+				width: 50px; /* Ширина рисунка в пикселах */
+				height: 30px; /* Высота рисунка */
+				margin: 0 auto; /* выравниваем кнопку по центру страницы */
+			}
+			a.rotate2:hover {
+				background-position: 0 -30px; /* Смещение фона */
+			}	
+			
+			.animate6 { 
+				position:relative; 
+				margin:0 auto;/* устанваливаем блок div по центру страницы*/
+				width:480px; /* Ширина */
+				height: 360px;  /* Высота */				
+			}
+			.animate6 img { 
+				position:absolute; /* абсолютное позиционирование*/
+				left: 0; /* выравниваем картинки по левому верхнему углу div-а*/ 
+				top: 0; /* выравниваем картинки по левому верхнему углу div-а */  
+			}
+			.animate6 img.first {
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+			.animate6:hover img.first {
+				opacity:1;
+				filter:alpha(opacity=100);
+			}
+			.animate6:hover img.second, .animate6 img.second:hover {
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+			
+			.animate7 { 
+				position:relative; 
+				margin:0 auto;/* устанваливаем блок div по центру страницы*/
+				width:480px; /* Ширина */
+				height: 360px;  /* Высота */				
+			}
+			.animate7 img { 
+				position:absolute; /* абсолютное позиционирование*/
+				left: 0; /* выравниваем картинки по левому верхнему углу div-а*/ 
+				top: 0; /* выравниваем картинки по левому верхнему углу div-а */  
+			}
+			.animate7 img.first {
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+			.animate7:hover img.first {
+				opacity:1;
+				filter:alpha(opacity=100);
+			}
+			.animate7:hover img.second, .animate7 img.second:hover {
+				opacity:0;
+				filter:alpha(opacity=0);
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			
+			.animate8 { 
+				position:relative; 
+				margin:0 auto;/* устанваливаем блок div по центру страницы*/
+				width:480px; /* Ширина */
+				height: 360px;  /* Высота */				
+			}
+			.animate8 img { 
+				position:absolute; /* абсолютное позиционирование*/
+				left: 0; /* выравниваем картинки по левому верхнему углу div-а*/ 
+				top: 0; /* выравниваем картинки по левому верхнему углу div-а */  
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			.animate8 img.first {
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+			.animate8:hover img.first {
+				opacity:1;
+				filter:alpha(opacity=100);
+			}
+			.animate8:hover img.second, .animate8 img.second:hover {
+				opacity:0;
+				filter:alpha(opacity=0);
+				-moz-transform:scale(0, 1);
+				-webkit-transform:scale(0, 1);
+				-o-transform:scale(0, 1);
+				-ms-transform:scale(0, 1);
+				transform:scale(0, 1);
+			}
+			
+.image {
+ transition: transform 0.7s;
+}
+
+.image:hover {
+ transform: rotate(360deg);
+}			
